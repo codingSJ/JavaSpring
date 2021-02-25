@@ -4,15 +4,15 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class Member {
 
-    private AtomicLong id;  //서버에서 회원을 구분하기 위한 변수. 동시성을 고려해 AtomicLong으로 구현했다.
+    private Long id;  //서버에서 회원을 구분하기 위한 변수.
     private String name;    //회원 이름
 
     //id의 Getter와 Setter//
-    public AtomicLong getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(AtomicLong id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
